@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Input with Hint</title>
+    <style>
+        .hint {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hint .hint-text {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .hint:hover .hint-text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <label>2.Email</label><br>
+    <input type="email" id="email" name="email">
+    <div class="hint">
+        <button>ℹ️ </button> 
+        <span class="hint-text">hint:sample@example.com</span>
+    </div>
+    <br>
+    <input type="submit" name="button" value="Submit"/>
+</body>
+</html>
