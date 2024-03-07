@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Add a New Product</legend>
+    <form action="save_product.php" method="post">
+        <label for="name">Product Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="Buying Price">Buying Price</label><br>
+        <input type ="text" id = "Buying Price" name = "Buying Price" required><br>
+        
+        <label for="price">Selling Price:</label><br>
+        <input type="number" id="price" name="price" step="0.01" required><br>
+        <hr>
+        
+        <input type="checkbox" id="Display" name="Display" >Display<br>
+        <input type="button" value="save">
+    </form>
+</body>
+</html>
